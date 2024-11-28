@@ -1,67 +1,95 @@
+/* COLOR PALETTE
+- citrine #E9CE2C
+- naples yellow #F9DC5C
+- mindaro #E5F993
+- cornell red #BF211E
+- sandy brown #F2A359
+- persian orange #DB9065
+- madder #A4031F */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: "Space Grotesk"
 }
 
 body {
   background-color: #000000;
-  /* display: flex; */
 }
 
 h1 {
-  font-family: Honk;
+  font-family: Nabla;
   font-size: 50px;
   padding: 10px 80px;
-  text-shadow: 1px 7px 5px rgb(39, 39, 39);
+  text-shadow: -6px 2px 4px rgb(39, 39, 39);
 } 
 
 button {
-  background-color: palevioletred;
-  letter-spacing: 0.15em;
+  background-color: #F2A359;
   border: none;
-  border-radius: 8px;
-  box-shadow: 5px 5px 0 purple;
+  border-radius: 10px 2px;
+  box-shadow: -4px 4px 0 #BF211E;
   padding: 15px 20px;
   margin: 5px;
   transition: all 0.2s;
 }
 
 button:first-child {
-  margin: 30px 0 50px;
+  margin: 10px 0 40px;
 }
 
 button:last-child {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 button:hover,
 button:active {
-  background-color: coral;
-  box-shadow: -3px -3px 0 pink;
+  background-color: #BF211E;
+  box-shadow: none;
+  color: #E5F993;
+  letter-spacing: 0.15em;
+}
+
+.btn-rainbow:hover {
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+}
+
+.color-picker {
+  display: block;
+  margin: auto;
+  height: 35px;
+  width: 70px;
+  margin-top: 5px;
+  border: none;
+  background-color: transparent;
 }
 
 main {
-  max-width: 65%;
+  max-width: 50%;
   margin: auto;
   display: flex;
+  gap: 30px;
   /* background-color: red; */
 }
 
 .draw-options {
   width: 25%;
-  padding: 50px 50px;
+  padding: 35px 50px 0px;
+  border: 1px solid rgb(39, 39, 39);
+  box-shadow: inset 0px 0px 10px rgb(39, 39, 39);
+  border-radius: 10px;
   /* background-color: blue; */
 }
 
 .draw-options p {
-  font-family: Honk;
+  font-family: "Pixelify Sans";
   font-weight: bold;
-  font-size: 30px;
-  color: yellow;
+  font-size: 35px;
+  color: #E9CE2C;
   text-align: center;
-  text-shadow: 4px 4px purple;
+  text-shadow: -2px 2px #BF211E;
 }
 
 .options-buttons {
@@ -73,10 +101,11 @@ main {
 }
 
 .grid-container {
-  height: 780px;
-  width: 780px;
+  height: 700px;
+  width: 700px;
   margin: 20px auto;
-  border: 10px solid rgb(39, 39, 39);
+  border: 10px solid rgb(39, 39, 39, 0.5);
+  border-radius: 4px;
   display: flex;
   flex-wrap: wrap;
 }
